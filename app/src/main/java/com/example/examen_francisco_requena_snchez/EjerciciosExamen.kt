@@ -1,5 +1,7 @@
 package com.example.examen_francisco_requena_snchez
 
+import kotlin.random.Random
+
 
 private fun filtrar_juegos(listavideojuegos:MutableList<Videojuego>,año: Int) {
     for (i in 0.. listavideojuegos.size-1){
@@ -37,7 +39,16 @@ private fun plataformas(listavideojuegos: MutableList<Videojuego>):MutableList<S
 }
 
 fun championsLeague(listaequipos:MutableList<Equipos>){
-    var random 
+    var arraypos:IntArray
+    arraypos=intArrayOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)
+    arraypos.shuffle()
+    var arrayaux:IntArray
+    for (i in 0 until arraypos.size){
+
+        println(listaequipos[arraypos[i]].nombre+"VS"+listaequipos[arraypos[i]])
+
+
+    }
 }
 
 fun main(){
@@ -93,6 +104,6 @@ println("Ejercicio 3 ")
    println( mapaJuegos(listasjuegos,2020))
     println("Ejercicio 4 ")
     println(plataformas(listasjuegos))
-
+    championsLeague(listaEquipos)
 
 }
