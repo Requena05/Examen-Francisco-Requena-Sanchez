@@ -42,13 +42,11 @@ fun championsLeague(listaequipos:MutableList<Equipos>){
     var arraypos:IntArray
     arraypos=intArrayOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)
     arraypos.shuffle()
-    var arrayaux:IntArray
-    for (i in 0 until arraypos.size){
+    var arrayaux=intArrayOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)
+    arrayaux.shuffle()
+    for (i in 0 until arraypos.size/2){
+        println(listaequipos[arraypos[i]].nombre+"VS"+listaequipos[arrayaux[i]].nombre)}
 
-        println(listaequipos[arraypos[i]].nombre+"VS"+listaequipos[arraypos[i]])
-
-
-    }
 }
 
 fun main(){
